@@ -1,0 +1,125 @@
+{
+  "identity": {
+    "name": "Arpit Agrahari",
+    "username": "Arpit10110",
+    "role": "Full Stack Web Developer",
+    "headline": "Building high-impact web products, robust APIs & Generative AI tools",
+    "location": "India 🇮🇳",
+    "portfolio": "https://arpitdev.vercel.app/",
+    "email": "arpitkumaragrahari21@gmail.com",
+    "resume": "https://drive.google.com/file/d/1mP7xFLobYVuCHrJGZMg8egGWfkdRkilr/view?usp=sharing",
+    "avatar_url": "https://avatars.githubusercontent.com/u/120322314?v=4"
+  },
+  "socials": {
+    "github": "https://github.com/Arpit10110",
+    "linkedin": "https://linkedin.com/in/arpit-agrahari-54aa192a1",
+    "portfolio": "https://arpitdev.vercel.app/",
+    "leetcode": "https://www.leetcode.com/arpit_agrahari",
+    "geeksforgeeks": "https://auth.geeksforgeeks.org/user/arpit_agrahari10100",
+    "discord": "https://discord.gg/arpitagrahari",
+    "instagram": "https://instagram.com/anonymous_.pdf"
+  },
+  "skills": {
+    "frontend": [
+      "React.js",
+      "Next.js",
+      "TypeScript",
+      "JavaScript",
+      "Tailwind CSS",
+      "Redux",
+      "HTML5",
+      "CSS3"
+    ],
+    "backend": [
+      "Node.js",
+      "Express.js",
+      "NestJS",
+      "Python",
+      "FastAPI",
+      "Socket.io"
+    ],
+    "databases": [
+      "PostgreSQL",
+      "MongoDB",
+      "MySQL",
+      "Firebase"
+    ],
+    "ai_and_tools": [
+      "Generative AI",
+      "Gemini API",
+      "Docker",
+      "Git",
+      "GitHub",
+      "Linux",
+      "Figma"
+    ]
+  },
+  "status": {
+    "currently_building": [
+      "Wapix (WhatsApp Platform & Automation)",
+      "Generative AI Developer Tools",
+      "Full-Stack Web Architectures"
+    ],
+    "currently_learning": [
+      "Python & FastAPI Ecosystem",
+      "Autonomous AI Agents",
+      "Scalable System Design"
+    ]
+  },
+  "featured_projects": [
+    {
+      "name": "AuraAi",
+      "repo": "Arpit10110/AuraAi",
+      "url": "https://github.com/Arpit10110/AuraAi",
+      "description": "Intelligent AI assistant platform powered by Gemini API, interactive prompts, and smart multimodal workflows.",
+      "tech": ["React", "Node.js", "Generative AI", "Express"]
+    },
+    {
+      "name": "HealthBridge",
+      "repo": "Arpit10110/HealthBridge-frontend",
+      "url": "https://github.com/Arpit10110/HealthBridge-frontend",
+      "description": "Comprehensive healthcare web solution connecting patients and medical practitioners with digital records and scheduling.",
+      "tech": ["React.js", "Node.js", "Express.js", "MongoDB"]
+    },
+    {
+      "name": "JobHawk",
+      "repo": "Arpit10110/JobHawk-fronted",
+      "url": "https://github.com/Arpit10110/JobHawk-fronted",
+      "description": "Modern career search and job tracking platform featuring real-time opportunities, filtering, and application status.",
+      "tech": ["Next.js", "TypeScript", "Tailwind CSS", "REST API"]
+    },
+    {
+      "name": "Arbyte CLI",
+      "repo": "Arpit10110/Arbyte",
+      "url": "https://github.com/Arpit10110/Arbyte",
+      "description": "Published Node.js CLI developer package engineered for rapid project scaffolding, utilities, and workflow automation.",
+      "tech": ["Node.js", "JavaScript", "CLI", "npm"]
+    },
+    {
+      "name": "ScolarMart",
+      "repo": "Arpit10110/ScolarMart",
+      "url": "https://github.com/Arpit10110/ScolarMart",
+      "description": "Online student campus marketplace facilitating resource sharing, book exchange, and academic product trading.",
+      "tech": ["React.js", "Node.js", "Express.js", "MongoDB"]
+    },
+    {
+      "name": "Ochi Showcase",
+      "repo": "Arpit10110/Ochi",
+      "url": "https://github.com/Arpit10110/Ochi",
+      "description": "Award-winning interactive presentation web application demonstrating advanced GSAP animations, canvas, and UI design.",
+      "tech": ["JavaScript", "CSS3", "GSAP", "Modern UI"]
+    }
+  ],
+  "theme": {
+    "bg": "#0D1117",
+    "card_bg": "#161B22",
+    "border": "#30363D",
+    "text": "#F0F6FC",
+    "muted": "#8B949E",
+    "accent": "#58A6FF",
+    "secondary_accent": "#A371F7",
+    "green": "#3FB950",
+    "cyan": "#39D353",
+    "orange": "#D29922"
+  }
+}

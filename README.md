@@ -1,32 +1,223 @@
-<h1 align="center">Hi 👋, I'm Arpit Agrahari</h1>
-<h3 align="center">A Passionate Full Stack Web Developer from India</h3>
+<div align="center">
 
-<p align="left"> <img src="https://komarev.com/ghpvc/?username=arpit10110&label=Profile%20views&color=0e75b6&style=flat" alt="arpit10110" /> </p>
+<!-- Terminal Hero Banner -->
+<a href="https://arpitdev.vercel.app/">
+  <img src="./assets/hero.svg" alt="Arpit Agrahari - Full Stack Developer Terminal Hero" width="100%" />
+</a>
 
-- 👨‍💻 Want To Know More About Me https://arpitdev.vercel.app/
+<br/>
 
-- 💬 Ask me about **react.js,JavaScript,HTML,CSS,Firebase,DSA,Node.js,Next.js,AI,mongodB,express.js**
-
-- 📫 How to reach me **arpitkumaragrahari21@gmail.com**
-
-- 🧑‍💻 Resume [https://drive.google.com/file/d/1mP7xFLobYVuCHrJGZMg8egGWfkdRkilr/view?usp=sharing](https://drive.google.com/file/d/1mP7xFLobYVuCHrJGZMg8egGWfkdRkilr/view?usp=sharing)
-
-- ⚡ Fun fact **I am Funny 😂**
-
-<h3 align="left">Connect with me:</h3>
+<!-- Real GitHub Contribution Calendar Heatmap -->
 <p align="left">
-<a href="https://linkedin.com/in/arpit-agrahari-54aa192a1" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/linked-in-alt.svg" alt="arpit-agrahari-54aa192a1" height="30" width="40" /></a>
-<a href="https://instagram.com/anonymous_.pdf" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/instagram.svg" alt="anonymous_.pdf" height="30" width="40" /></a>
-<a href="https://www.leetcode.com/arpit_agrahari" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/leet-code.svg" alt="arpit_agrahari" height="30" width="40" /></a>
-<a href="https://auth.geeksforgeeks.org/user/arpit_agrahari10100" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/geeks-for-geeks.svg" alt="arpit_agrahari10100" height="30" width="40" /></a>
-<a href="https://discord.gg/arpitagrahari" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/discord.svg" alt="arpitagrahari" height="30" width="40" /></a>
+  <img src="https://raw.githubusercontent.com/Arpit10110/Arpit10110/main/assets/icons/terminal.svg" width="16" height="16" onerror="this.style.display='none'" />
+  <b>&nbsp;CONTRIBUTION ACTIVITY</b>
 </p>
 
-<h3 align="left">Languages and Tools:</h3>
-<p align="left"> <a href="https://aws.amazon.com" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/amazonwebservices/amazonwebservices-original-wordmark.svg" alt="aws" width="40" height="40"/> </a> <a href="https://getbootstrap.com" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/bootstrap/bootstrap-plain-wordmark.svg" alt="bootstrap" width="40" height="40"/> </a> <a href="https://www.cprogramming.com/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/c/c-original.svg" alt="c" width="40" height="40"/> </a> <a href="https://www.w3schools.com/cpp/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/cplusplus/cplusplus-original.svg" alt="cplusplus" width="40" height="40"/> </a> <a href="https://www.w3schools.com/css/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/css3/css3-original-wordmark.svg" alt="css3" width="40" height="40"/> </a> <a href="https://www.docker.com/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/docker/docker-original-wordmark.svg" alt="docker" width="40" height="40"/> </a> <a href="https://expressjs.com" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/express/express-original-wordmark.svg" alt="express" width="40" height="40"/> </a> <a href="https://www.figma.com/" target="_blank" rel="noreferrer"> <img src="https://www.vectorlogo.zone/logos/figma/figma-icon.svg" alt="figma" width="40" height="40"/> </a> <a href="https://firebase.google.com/" target="_blank" rel="noreferrer"> <img src="https://www.vectorlogo.zone/logos/firebase/firebase-icon.svg" alt="firebase" width="40" height="40"/> </a> <a href="https://git-scm.com/" target="_blank" rel="noreferrer"> <img src="https://www.vectorlogo.zone/logos/git-scm/git-scm-icon.svg" alt="git" width="40" height="40"/> </a> <a href="https://www.w3.org/html/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original-wordmark.svg" alt="html5" width="40" height="40"/> </a> <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-original.svg" alt="javascript" width="40" height="40"/> </a> <a href="https://www.linux.org/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/linux/linux-original.svg" alt="linux" width="40" height="40"/> </a> <a href="https://www.mongodb.com/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/mongodb/mongodb-original-wordmark.svg" alt="mongodb" width="40" height="40"/> </a> <a href="https://www.mysql.com/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/mysql/mysql-original-wordmark.svg" alt="mysql" width="40" height="40"/> </a> <a href="https://nextjs.org/" target="_blank" rel="noreferrer"> <img src="https://cdn.worldvectorlogo.com/logos/nextjs-2.svg" alt="nextjs" width="40" height="40"/> </a> <a href="https://nodejs.org" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/nodejs/nodejs-original-wordmark.svg" alt="nodejs" width="40" height="40"/> </a> <a href="https://www.photoshop.com/en" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/photoshop/photoshop-line.svg" alt="photoshop" width="40" height="40"/> </a> <a href="https://www.python.org" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/python/python-original.svg" alt="python" width="40" height="40"/> </a> <a href="https://reactjs.org/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/react/react-original-wordmark.svg" alt="react" width="40" height="40"/> </a> <a href="https://sass-lang.com" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/sass/sass-original.svg" alt="sass" width="40" height="40"/> </a> <a href="https://tailwindcss.com/" target="_blank" rel="noreferrer"> <img src="https://www.vectorlogo.zone/logos/tailwindcss/tailwindcss-icon.svg" alt="tailwind" width="40" height="40"/> </a> </p>
+<img src="./assets/contribution-heatmap.svg" alt="Arpit Agrahari - Real GitHub Contribution Heatmap" width="100%" />
 
-<p><img align="left" src="https://github-readme-stats.vercel.app/api/top-langs?username=arpit10110&show_icons=true&locale=en&layout=compact" alt="arpit10110" /></p>
+<br/><br/>
 
-<p>&nbsp;<img align="center" src="https://github-readme-stats.vercel.app/api?username=arpit10110&show_icons=true&locale=en" alt="arpit10110" /></p>
+<!-- Whoami & System Specifications (ASCII Portrait + Neofetch Info Card) -->
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+  <tr>
+    <td width="50%" align="center" valign="top">
+      <img src="./assets/ascii-profile.svg" alt="Arpit Agrahari - ASCII Portrait" width="100%" />
+    </td>
+    <td width="50%" align="center" valign="top">
+      <img src="./assets/info-card.svg" alt="Arpit Agrahari - Neofetch Info Card" width="100%" />
+    </td>
+  </tr>
+</table>
 
-<p><img align="center" src="https://github-readme-streak-stats.herokuapp.com/?user=arpit10110&" alt="arpit10110" /></p>
+<br/>
+
+<!-- Real GitHub Language Distribution -->
+<p align="left">
+  <b>&nbsp;REAL REPOSITORY LANGUAGE DISTRIBUTION</b>
+</p>
+
+<img src="./assets/language-stats.svg" alt="Arpit Agrahari - Real GitHub Language Distribution" width="100%" />
+
+<br/><br/>
+
+<!-- Real GitHub Statistics Dashboard -->
+<p align="left">
+  <b>&nbsp;AUTHENTIC GITHUB ACTIVITY &amp; METRICS</b>
+</p>
+
+<img src="./assets/github-stats.svg" alt="Arpit Agrahari - GitHub Statistics" width="100%" />
+
+</div>
+
+<br/>
+
+---
+
+### 💻 `$ ls ~/tech-stack`
+
+<table width="100%">
+  <tr>
+    <td width="25%" valign="top">
+      <h4>⚡ Frontend</h4>
+      <ul>
+        <li><b>React.js</b></li>
+        <li><b>Next.js</b></li>
+        <li><b>TypeScript</b></li>
+        <li><b>JavaScript</b> (ES6+)</li>
+        <li><b>Tailwind CSS</b></li>
+        <li>Redux / Zustand</li>
+        <li>HTML5 &amp; CSS3</li>
+      </ul>
+    </td>
+    <td width="25%" valign="top">
+      <h4>🛠️ Backend</h4>
+      <ul>
+        <li><b>Node.js</b></li>
+        <li><b>Express.js</b></li>
+        <li><b>NestJS</b></li>
+        <li><b>Python</b></li>
+        <li><b>FastAPI</b></li>
+        <li>REST &amp; Socket.io</li>
+        <li>Microservices</li>
+      </ul>
+    </td>
+    <td width="25%" valign="top">
+      <h4>🗄️ Databases</h4>
+      <ul>
+        <li><b>PostgreSQL</b></li>
+        <li><b>MongoDB</b></li>
+        <li><b>MySQL</b></li>
+        <li><b>Firebase</b></li>
+        <li>Prisma / Mongoose</li>
+        <li>Redis (Caching)</li>
+      </ul>
+    </td>
+    <td width="25%" valign="top">
+      <h4>🤖 AI &amp; Tooling</h4>
+      <ul>
+        <li><b>Generative AI</b></li>
+        <li><b>Gemini API</b></li>
+        <li>Docker</li>
+        <li>Git &amp; GitHub</li>
+        <li>Linux / CLI</li>
+        <li>Figma</li>
+      </ul>
+    </td>
+  </tr>
+</table>
+
+<br/>
+
+---
+
+### 🚀 `$ ls -la ~/featured-projects`
+
+<table>
+  <tr>
+    <td width="50%" valign="top">
+      <h4>🤖 <a href="https://github.com/Arpit10110/AuraAi">AuraAI</a></h4>
+      <p>Intelligent multimodal AI assistant platform integrating Gemini API for dynamic reasoning, content synthesis, and real-time user prompts.</p>
+      <p><code>React</code> · <code>Node.js</code> · <code>Express</code> · <code>Generative AI</code> · <code>Gemini API</code></p>
+      <p><a href="https://github.com/Arpit10110/AuraAi"><b>View Repository →</b></a></p>
+    </td>
+    <td width="50%" valign="top">
+      <h4>🏥 <a href="https://github.com/Arpit10110/HealthBridge-frontend">HealthBridge</a></h4>
+      <p>Full-stack healthcare consultation and medical records platform connecting patients with practitioners through real-time appointments.</p>
+      <p><code>React.js</code> · <code>Node.js</code> · <code>Express.js</code> · <code>MongoDB</code> · <code>Tailwind</code></p>
+      <p><a href="https://github.com/Arpit10110/HealthBridge-frontend"><b>View Frontend →</b></a> · <a href="https://github.com/Arpit10110/HealthBridge-Backend"><b>Backend →</b></a></p>
+    </td>
+  </tr>
+  <tr>
+    <td width="50%" valign="top">
+      <h4>💼 <a href="https://github.com/Arpit10110/JobHawk-fronted">JobHawk</a></h4>
+      <p>Modern job search and career tracking portal featuring real-time opportunities, custom filtering, and dynamic application tracking.</p>
+      <p><code>Next.js</code> · <code>TypeScript</code> · <code>Tailwind CSS</code> · <code>REST API</code></p>
+      <p><a href="https://github.com/Arpit10110/JobHawk-fronted"><b>View Repository →</b></a></p>
+    </td>
+    <td width="50%" valign="top">
+      <h4>⚡ <a href="https://github.com/Arpit10110/Arbyte">Arbyte CLI</a></h4>
+      <p>Published Node.js CLI utility package designed for rapid development scaffolding, automation commands, and developer toolkits.</p>
+      <p><code>Node.js</code> · <code>JavaScript</code> · <code>npm package</code> · <code>CLI</code></p>
+      <p><a href="https://github.com/Arpit10110/Arbyte"><b>View Repository →</b></a></p>
+    </td>
+  </tr>
+  <tr>
+    <td width="50%" valign="top">
+      <h4>🎓 <a href="https://github.com/Arpit10110/ScolarMart">ScolarMart</a></h4>
+      <p>Interactive student marketplace enabling academic book exchanges, campus product trading, and peer-to-peer resource sharing.</p>
+      <p><code>React.js</code> · <code>Node.js</code> · <code>Express.js</code> · <code>MongoDB</code></p>
+      <p><a href="https://github.com/Arpit10110/ScolarMart"><b>View Repository →</b></a></p>
+    </td>
+    <td width="50%" valign="top">
+      <h4>🎨 <a href="https://github.com/Arpit10110/Ochi">Ochi Showcase</a></h4>
+      <p>Award-winning interactive presentation web experience demonstrating modern GSAP micro-animations, custom cursor physics, and sleek UI.</p>
+      <p><code>JavaScript</code> · <code>CSS3</code> · <code>GSAP</code> · <code>Interactive Design</code></p>
+      <p><a href="https://github.com/Arpit10110/Ochi"><b>View Repository →</b></a></p>
+    </td>
+  </tr>
+</table>
+
+<br/>
+
+---
+
+### 📡 `$ cat ~/current-focus.txt`
+
+```bash
+$ cat ~/current-focus.txt
+```
+
+- 🚀 **Currently Building**:
+  - **Wapix** — WhatsApp API platform, automated messaging & business integrations.
+  - **Generative AI Developer Tools** — Intelligent agents, prompt pipelines, and developer accelerators.
+  - **Full-Stack SaaS Applications** — Production-grade architectures using Next.js, NestJS, and PostgreSQL.
+
+- 🧠 **Currently Learning & Exploring**:
+  - Python ecosystem & **FastAPI** high-performance asynchronous backends.
+  - Autonomous AI Agents & Function Calling workflows.
+  - Distributed Systems Architecture & Microservices.
+
+<br/>
+
+---
+
+### 🌐 `$ ./connect.sh`
+
+```bash
+$ ./connect.sh --all
+```
+
+<div align="center">
+
+| Platform | Link | Action |
+|:---|:---|:---|
+| **Portfolio** | `arpitdev.vercel.app` | [**Visit Portfolio**](https://arpitdev.vercel.app/) |
+| **LinkedIn** | `linkedin.com/in/arpit-agrahari-54aa192a1` | [**Connect on LinkedIn**](https://linkedin.com/in/arpit-agrahari-54aa192a1) |
+| **GitHub** | `github.com/Arpit10110` | [**Follow @Arpit10110**](https://github.com/Arpit10110) |
+| **LeetCode** | `leetcode.com/arpit_agrahari` | [**View Solutions**](https://www.leetcode.com/arpit_agrahari) |
+| **GeeksforGeeks** | `geeksforgeeks.org/user/arpit_agrahari10100` | [**View DSA Score (1000+)**](https://auth.geeksforgeeks.org/user/arpit_agrahari10100) |
+| **Discord** | `discord.gg/arpitagrahari` | [**Join Discord**](https://discord.gg/arpitagrahari) |
+| **Instagram** | `instagram.com/anonymous_.pdf` | [**Follow Instagram**](https://instagram.com/anonymous_.pdf) |
+| **Resume** | Google Drive Document | [**View Resume**](https://drive.google.com/file/d/1mP7xFLobYVuCHrJGZMg8egGWfkdRkilr/view?usp=sharing) |
+| **Email** | Direct Mail | [**arpitkumaragrahari21@gmail.com**](mailto:arpitkumaragrahari21@gmail.com) |
+
+</div>
+
+<br/>
+
+---
+
+<div align="center">
+
+```bash
+arpit@github:~$ echo "Built with code, caffeine & questionable sleep schedules. Thanks for visiting 👋"
+arpit@github:~$ exit
+```
+
+<p align="center">
+  <img src="https://komarev.com/ghpvc/?username=arpit10110&label=Profile%20Views&color=58a6ff&style=flat-square" alt="Profile Views" />
+</p>
+
+<sub>This profile automatically syncs using GitHub Actions and custom Python SVG generators. See <a href="./PROFILE_SETUP.md">PROFILE_SETUP.md</a> for details.</sub>
+
+</div>

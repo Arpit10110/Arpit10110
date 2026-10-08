@@ -1,0 +1,51 @@
+name: Update GitHub Profile Stats
+
+on:
+  schedule:
+    # Runs daily at 06:17 UTC
+    - cron: "17 6 * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  update-profile:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+          cache: "pip"
+
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install -r requirements.txt
+
+      - name: Fetch data and regenerate profile assets
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          python scripts/generate_profile.py
+
+      - name: Commit and push changes if updated
+        run: |
+          git config --global user.name "github-actions[bot]"
+          git config --global user.email "github-actions[bot]@users.noreply.github.com"
+          
+          # Check if any tracked or untracked changes in assets or data
+          if [ -n "$(git status --porcelain assets data)" ]; then
+            git add assets/ data/
+            git commit -m "chore(profile): refresh automated GitHub metrics and SVGs [skip ci]"
+            git push origin main
+            echo "✓ Successfully pushed updated assets and statistics."
+          else
+            echo "No changes detected in profile metrics or assets. Skipping commit."
+          fi
