@@ -43,17 +43,15 @@
       white-space: pre;
     }
     .row {
-      opacity: 0;
+      opacity: 1;
       animation: revealRow 0.4s ease-out forwards;
     }
     @keyframes revealRow {
       0% {
-        opacity: 0;
-        transform: translateY(3px);
+        opacity: 0.1;
       }
       100% {
         opacity: 1;
-        transform: translateY(0);
       }
     }
   </style>
@@ -74,29 +72,29 @@
 
   <!-- ASCII Content -->
   <text class="ascii-font" xml:space="preserve">
-    <tspan x="20" y="56.0" class="row" style="animation-delay: 0.0s;">%%%%%%%%%%%%%%%%%%%%%%%@%%%%%%%%%%%%%%%%%%%%%%%%%%%%</tspan>
-        <tspan x="20" y="67.5" class="row" style="animation-delay: 0.05s;">%%%%%%%%%%%%%%%%%%%%@%#####%%%%%%%%%%%%%%%%%%%%%%%%%</tspan>
-        <tspan x="20" y="79.0" class="row" style="animation-delay: 0.1s;">%%%%%%%%%%%%%%%%%%%#=....:::-*%%%%%%%%%%%%%%%%%%%%%%</tspan>
-        <tspan x="20" y="90.5" class="row" style="animation-delay: 0.15s;">%%%%%%%%%%%%%%%%%%*.   ..:::::*%=::::#%%%%%%%%%%%%%%</tspan>
-        <tspan x="20" y="102.0" class="row" style="animation-delay: 0.2s;">%%%%%%%%%%%%%%%%%#.    .-++*++%%--:. #%%%%%%%%%%%%%%</tspan>
-        <tspan x="20" y="113.5" class="row" style="animation-delay: 0.25s;">#%%%%%%%%%%%%%%%%%-   .:--:===%@-.-=-#@%%%%%%%%%%%%%</tspan>
-        <tspan x="20" y="125.0" class="row" style="animation-delay: 0.3s;">#%%%%%%%%%%%%%%%%%%-...:--=--*=#+=-=##%%%%%%%%%%%%%%</tspan>
-        <tspan x="20" y="136.5" class="row" style="animation-delay: 0.35s;">##%%%%%#%%%%%%%%%+.  .  .......=::-+=+#%@%%%%%%%%%%%</tspan>
-        <tspan x="20" y="148.0" class="row" style="animation-delay: 0.4s;">##%%%%##%%%%%%%%%:     .       .::---+*#*%@%%%%%%%%%</tspan>
-        <tspan x="20" y="159.5" class="row" style="animation-delay: 0.45s;">=#%%%%#%%%%%%%%%%*.          .. :----:==::#%%%%%%%%%</tspan>
-        <tspan x="20" y="171.0" class="row" style="animation-delay: 0.5s;">.+#%#%#%%%%%%%#=:..           .=:-:::     .=%%%%%%%%</tspan>
-        <tspan x="20" y="182.5" class="row" style="animation-delay: 0.55s;">:=+######%%%%*......        . *%:::..       =%@%%%%%</tspan>
-        <tspan x="20" y="194.0" class="row" style="animation-delay: 0.6s;">-==*####%%%%%- ...:=.       .:+...:.        .:*%%%%%</tspan>
-        <tspan x="20" y="205.5" class="row" style="animation-delay: 0.65s;">-=+*####%%%##....:+%#..     .. .. .         .. *%%%%</tspan>
-        <tspan x="20" y="217.0" class="row" style="animation-delay: 0.7s;">==+*#*##%%##*.... *@@= . .     .             . =@%%%</tspan>
-        <tspan x="20" y="228.5" class="row" style="animation-delay: 0.75s;">=++#**##%###+.... -@%%.....   .               .#%%%%</tspan>
-        <tspan x="20" y="240.0" class="row" style="animation-delay: 0.8s;">=+*#*#######= .... =@@+      .   .         ..-#%%%%%</tspan>
-        <tspan x="20" y="251.5" class="row" style="animation-delay: 0.85s;">++**+#######= ..:::.=%%.          .       :%%%%%%%%%</tspan>
-        <tspan x="20" y="263.0" class="row" style="animation-delay: 0.9s;">++#*+#*#*##*+  ..::-:-%-           ....    *%%%%%%%%</tspan>
-        <tspan x="20" y="274.5" class="row" style="animation-delay: 0.95s;">+*#*#**#*##++=. ......-.     .       ..... .*%%%%%%%</tspan>
-        <tspan x="20" y="286.0" class="row" style="animation-delay: 1.0s;">+*#+=--::::::-:     -**=.     ::::.       ..:#%%%%%%</tspan>
-        <tspan x="20" y="297.5" class="row" style="animation-delay: 1.05s;">*#+......:......    :*@@%=     :.....::::--:.+%%%%%%</tspan>
-        <tspan x="20" y="309.0" class="row" style="animation-delay: 1.1s;">+-  .......          .%%%%+...  ......     .-%%%%%%%</tspan>
-        <tspan x="20" y="320.5" class="row" style="animation-delay: 1.15s;">*:        ..          *###%*.....:.    ..  *%%%%%%%%</tspan>
+    <tspan x="20" y="56.0" class="row" style="animation-delay: 0.0s;">                                                    </tspan>
+        <tspan x="20" y="67.5" class="row" style="animation-delay: 0.05s;">                     ....:..... .                   </tspan>
+        <tspan x="20" y="79.0" class="row" style="animation-delay: 0.1s;">                   . .:..:.........                 </tspan>
+        <tspan x="20" y="90.5" class="row" style="animation-delay: 0.15s;">                :-.        ..      ..               </tspan>
+        <tspan x="20" y="102.0" class="row" style="animation-delay: 0.2s;">               .:.     .             :              </tspan>
+        <tspan x="20" y="113.5" class="row" style="animation-delay: 0.25s;">              . .  :=*#%%#####*-.    .:             </tspan>
+        <tspan x="20" y="125.0" class="row" style="animation-delay: 0.3s;">              ..  .+##%@@@@@@@@%*=    :             </tspan>
+        <tspan x="20" y="136.5" class="row" style="animation-delay: 0.35s;">               .  :++##%@@@@@%%##*=  .              </tspan>
+        <tspan x="20" y="148.0" class="row" style="animation-delay: 0.4s;">               .-..::  .:-==-:.::--.:.              </tspan>
+        <tspan x="20" y="159.5" class="row" style="animation-delay: 0.45s;">               ==:       .=.    .:..=-              </tspan>
+        <tspan x="20" y="171.0" class="row" style="animation-delay: 0.5s;">               -*=+=-----%@%-:::::+-+-              </tspan>
+        <tspan x="20" y="182.5" class="row" style="animation-delay: 0.55s;">                +-=*%@@@+=+-+%%%#*=++               </tspan>
+        <tspan x="20" y="194.0" class="row" style="animation-delay: 0.6s;">              ..  :=*#++++++++*#=-::::              </tspan>
+        <tspan x="20" y="205.5" class="row" style="animation-delay: 0.65s;">            .:..   .-==+======-=..   ::             </tspan>
+        <tspan x="20" y="217.0" class="row" style="animation-delay: 0.7s;">         .. --        :+*++++-.    .  -.            </tspan>
+        <tspan x="20" y="228.5" class="row" style="animation-delay: 0.75s;">         .:=+:         ......         +: ::.        </tspan>
+        <tspan x="20" y="240.0" class="row" style="animation-delay: 0.8s;">       ..:=+=   ..                    +*+=:.        </tspan>
+        <tspan x="20" y="251.5" class="row" style="animation-delay: 0.85s;">    ..:----:                           :=+=-=:      </tspan>
+        <tspan x="20" y="263.0" class="row" style="animation-delay: 0.9s;">    :--:.                                .:=+=:     </tspan>
+        <tspan x="20" y="274.5" class="row" style="animation-delay: 0.95s;">  ..:.                                      ..:::.  </tspan>
+        <tspan x="20" y="286.0" class="row" style="animation-delay: 1.0s;">   .:::.                                      .-:-. </tspan>
+        <tspan x="20" y="297.5" class="row" style="animation-delay: 1.05s;">    :-:.                                  ...  ...: </tspan>
+        <tspan x="20" y="309.0" class="row" style="animation-delay: 1.1s;">    ......                         .:.  .:::.       </tspan>
+        <tspan x="20" y="320.5" class="row" style="animation-delay: 1.15s;">                        .  .    ..:.:::::           </tspan>
   </text>
 </svg>

@@ -2,6 +2,7 @@
 """
 generate_hero.py
 Generates the animated terminal-style Hero SVG banner for the top of the GitHub profile.
+Uses bulletproof SVG positioning compatible with GitHub Markdown Camo image proxy.
 """
 
 import json
@@ -35,11 +36,11 @@ def load_config():
 
 def build_hero_svg(config):
     card_width = 890
-    card_height = 250
+    card_height = 260
 
     identity = config.get("identity", {})
     name = identity.get("name", "Arpit Agrahari").upper()
-    role = identity.get("role", "Full Stack Web Developer")
+    role = identity.get("role", "Full Stack Web Developer").upper()
 
     svg = f"""<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 {card_width} {card_height}" width="{card_width}" height="{card_height}">
   <defs>
@@ -48,9 +49,9 @@ def build_hero_svg(config):
       <stop offset="50%" stop-color="#79C0FF" />
       <stop offset="100%" stop-color="#A371F7" />
     </linearGradient>
-    <linearGradient id="tagBgGrad" x1="0%" y1="0%" x2="100%" y2="0%">
-      <stop offset="0%" stop-color="#161B22" />
-      <stop offset="100%" stop-color="#21262D" />
+    <linearGradient id="pillGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#1F242C" />
+      <stop offset="100%" stop-color="#161B22" />
     </linearGradient>
     <filter id="heroGlow" x="-5%" y="-5%" width="110%" height="110%">
       <feDropShadow dx="0" dy="3" stdDeviation="6" flood-color="#000000" flood-opacity="0.6"/>
@@ -89,17 +90,17 @@ def build_hero_svg(config):
     }}
     .hero-name {{
       font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Montserrat", "Arial Black", sans-serif;
-      font-size: 32px;
+      font-size: 30px;
       font-weight: 900;
-      letter-spacing: 2.5px;
+      letter-spacing: 2px;
       fill: url(#heroTitleGrad);
     }}
     .hero-role {{
       font-family: "SF Mono", "Fira Code", Consolas, monospace;
-      font-size: 13.5px;
+      font-size: 13px;
       font-weight: 600;
       fill: #58A6FF;
-      letter-spacing: 1px;
+      letter-spacing: 0.8px;
     }}
     .hero-desc {{
       font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
@@ -109,12 +110,16 @@ def build_hero_svg(config):
     }}
     .tech-pill {{
       font-family: "SF Mono", "Fira Code", Consolas, monospace;
-      font-size: 11px;
+      font-size: 11.5px;
       font-weight: 500;
       fill: #8B949E;
     }}
     .tech-highlight {{
       fill: #79C0FF;
+      font-weight: 600;
+    }}
+    .tech-purple {{
+      fill: #D2A8FF;
       font-weight: 600;
     }}
     .cursor {{
@@ -123,14 +128,6 @@ def build_hero_svg(config):
     }}
     @keyframes blink {{
       50% {{ opacity: 0; }}
-    }}
-    .fade-line {{
-      opacity: 0;
-      animation: fadeIn 0.6s ease-out forwards;
-    }}
-    @keyframes fadeIn {{
-      from {{ opacity: 0; transform: translateY(4px); }}
-      to {{ opacity: 1; transform: translateY(0); }}
     }}
   </style>
 
@@ -148,40 +145,32 @@ def build_hero_svg(config):
   <!-- Window Title -->
   <text x="80" y="22" class="title-text">arpit@github:~$ ./welcome.sh --interactive</text>
 
-  <!-- Interactive Terminal Output -->
-  <g transform="translate(32, 64)" class="fade-line" style="animation-delay: 0.1s;">
-    <text x="0" y="0" class="prompt">arpit@github:~$ <tspan class="prompt-cmd">./welcome.sh</tspan></text>
-  </g>
+  <!-- Terminal Command Prompt Line 1 -->
+  <text x="32" y="65" class="prompt">arpit@github:~$ <tspan class="prompt-cmd">./welcome.sh</tspan></text>
 
   <!-- Hero Name -->
-  <g transform="translate(32, 108)" class="fade-line" style="animation-delay: 0.25s;">
-    <text x="0" y="0" class="hero-name">{name}</text>
-  </g>
+  <text x="32" y="106" class="hero-name">{name}</text>
 
-  <!-- Role & Tagline -->
-  <g transform="translate(32, 136)" class="fade-line" style="animation-delay: 0.4s;">
-    <text x="0" y="0" class="hero-role">⚡ {role.upper()}</text>
-    <text x="0" y="24" class="hero-desc">Building full-stack web products, robust backend architectures &amp; Generative AI tools.</text>
-  </g>
+  <!-- Role Badge -->
+  <text x="32" y="136" class="hero-role">⚡ {role}</text>
 
-  <!-- Tech Stack Line -->
-  <g transform="translate(32, 192)" class="fade-line" style="animation-delay: 0.55s;">
-    <text x="0" y="0" class="tech-pill">
-      <tspan class="tech-highlight">React.js</tspan> · 
-      <tspan class="tech-highlight">Next.js</tspan> · 
-      <tspan class="tech-highlight">TypeScript</tspan> · 
-      <tspan class="tech-highlight">Node.js</tspan> · 
-      <tspan class="tech-highlight">NestJS</tspan> · 
-      <tspan class="tech-highlight">PostgreSQL</tspan> · 
-      <tspan class="tech-highlight">Generative AI</tspan>
-    </text>
-  </g>
+  <!-- Description / Subtitle -->
+  <text x="32" y="162" class="hero-desc">Building full-stack web products, robust backend architectures &amp; Generative AI tools.</text>
 
-  <!-- Terminal Bottom Prompt -->
-  <g transform="translate(32, 226)" class="fade-line" style="animation-delay: 0.7s;">
-    <text x="0" y="0" class="prompt">arpit@github:~$ </text>
-    <rect x="115" y="-11" width="8" height="14" class="cursor" />
-  </g>
+  <!-- Tech Stack Highlights -->
+  <text x="32" y="196" class="tech-pill">
+    <tspan class="tech-highlight">React.js</tspan> · 
+    <tspan class="tech-highlight">Next.js</tspan> · 
+    <tspan class="tech-highlight">TypeScript</tspan> · 
+    <tspan class="tech-highlight">Node.js</tspan> · 
+    <tspan class="tech-purple">NestJS</tspan> · 
+    <tspan class="tech-purple">PostgreSQL</tspan> · 
+    <tspan class="tech-highlight">Generative AI</tspan>
+  </text>
+
+  <!-- Active Terminal Prompt with Blinking Cursor -->
+  <text x="32" y="232" class="prompt">arpit@github:~$ </text>
+  <rect x="148" y="220" width="8.5" height="15" class="cursor" />
 </svg>
 """
     return svg

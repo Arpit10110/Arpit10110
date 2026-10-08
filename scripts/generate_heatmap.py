@@ -2,7 +2,7 @@
 """
 generate_heatmap.py
 Renders real GitHub contribution calendar activity into an animated SVG heatmap
-with terminal window framing and stats.
+covering the trailing 12 months up to the current date.
 """
 
 import json
@@ -22,7 +22,7 @@ CONTRIBS_PATH = ROOT_DIR / "data" / "contributions.json"
 ASSETS_DIR = ROOT_DIR / "assets"
 HEATMAP_OUT = ASSETS_DIR / "contribution-heatmap.svg"
 
-# Palette: GitHub Dark Theme Green Spectrum
+# GitHub Dark Theme Green Spectrum
 LEVEL_COLORS = {
     0: "#161B22",
     1: "#0E4429",
@@ -34,11 +34,10 @@ LEVEL_COLORS = {
 
 def load_contributions():
     if not CONTRIBS_PATH.exists():
-        # Fallback dummy 52 weeks
         return {
             "total_lifetime": 2742,
-            "total_past_year": 1394,
-            "active_days_past_year": 187,
+            "total_past_year": 1697,
+            "active_days_past_year": 229,
             "current_streak": 2,
             "longest_streak": 29,
             "days": []
@@ -51,17 +50,13 @@ def build_heatmap_svg(data):
     card_width = 890
     card_height = 230
 
-    total_past_year = data.get("total_past_year", 1394)
+    total_past_year = data.get("total_past_year", 1697)
     total_lifetime = data.get("total_lifetime", 2742)
-    active_days = data.get("active_days_past_year", 187)
-    current_streak = data.get("current_streak", 0)
     longest_streak = data.get("longest_streak", 29)
 
     days = data.get("days", [])
-    # If we have days, arrange into 52 columns x 7 rows
-    # Pad to 52 * 7 = 364 days if needed
+    # 52 weeks * 7 days = 364 days
     if len(days) < 364:
-        # pad with empty days
         pad_count = 364 - len(days)
         padded_days = [{"date": "", "count": 0, "level": 0} for _ in range(pad_count)] + days
     else:
@@ -73,45 +68,51 @@ def build_heatmap_svg(data):
     grid_top = 75
 
     cells_svg = []
-    month_positions = {}
+    # Track month labels to display along top
+    month_labels = []
+    last_month_key = None
+    last_col = -5
 
     for i, day in enumerate(padded_days):
         col = i // 7
         row = i % 7
 
         level = day.get("level", 0)
-        # ensure count > 0 is at least level 1
-        if day.get("count", 0) > 0 and level == 0:
+        count = day.get("count", 0)
+        if count > 0 and level == 0:
             level = 1
         color = LEVEL_COLORS.get(level, LEVEL_COLORS[0])
 
         x = grid_left + (col * (cell_size + cell_gap))
         y = grid_top + (row * (cell_size + cell_gap))
 
-        # Check for month label change
+        # Check for month transition
         date_str = day.get("date", "")
-        if date_str and row == 0:
+        if date_str:
             try:
                 dt = datetime.strptime(date_str, "%Y-%m-%d")
-                month_name = dt.strftime("%b")
-                if month_name not in month_positions:
-                    month_positions[month_name] = x
+                m_key = f"{dt.year}-{dt.month:02d}"
+                # If first day of month or new month in the first few rows of the column
+                if m_key != last_month_key and (col - last_col >= 3):
+                    month_name = dt.strftime("%b")
+                    month_labels.append((month_name, x))
+                    last_month_key = m_key
+                    last_col = col
             except Exception:
                 pass
 
-        # Calculate progressive entrance animation
-        delay = round(0.1 + (col * 0.025), 3)
+        delay = round(0.05 + (col * 0.02), 3)
 
-        cell_str = f'<rect x="{x:.1f}" y="{y:.1f}" width="{cell_size}" height="{cell_size}" rx="2.5" fill="{color}" opacity="0">'
-        cell_str += f'<animate attributeName="opacity" from="0" to="1" dur="0.3s" begin="{delay}s" fill="freeze" />'
+        cell_str = f'<rect x="{x:.1f}" y="{y:.1f}" width="{cell_size}" height="{cell_size}" rx="2.5" fill="{color}" opacity="0.95">'
+        cell_str += f'<animate attributeName="opacity" from="0.3" to="0.95" dur="0.4s" begin="{delay}s" fill="freeze" />'
         cell_str += '</rect>'
         cells_svg.append(cell_str)
 
     cells_combined = "\n    ".join(cells_svg)
 
-    # Build Month Labels
+    # Build Month Labels SVG
     month_svg = []
-    for month_name, x_pos in month_positions.items():
+    for month_name, x_pos in month_labels:
         month_svg.append(f'<text x="{x_pos:.1f}" y="{grid_top - 10}" class="grid-label">{month_name}</text>')
     months_combined = "\n    ".join(month_svg)
 
@@ -191,7 +192,7 @@ def build_heatmap_svg(data):
   <!-- Title & Headline Stats -->
   <text x="80" y="22" class="title-text">arpit@github:~$ ./contributions.sh --activity</text>
   <text x="{card_width - 25}" y="22" class="stats-summary" text-anchor="end">
-    <tspan class="stats-strong">{total_past_year:,}</tspan> in last year · <tspan class="stats-strong">{total_lifetime:,}</tspan> lifetime · <tspan class="stats-strong">{longest_streak}d</tspan> max streak
+    <tspan class="stats-strong">{total_past_year:,}</tspan> in last 12 months · <tspan class="stats-strong">{total_lifetime:,}</tspan> lifetime · <tspan class="stats-strong">{longest_streak}d</tspan> max streak
   </text>
 
   <!-- Labels -->

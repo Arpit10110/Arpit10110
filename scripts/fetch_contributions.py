@@ -129,18 +129,21 @@ def main():
     else:
         total_lifetime = sum(d["count"] for d in all_dates_sorted)
 
-    # For the last 52 weeks (364 days plus current partial week)
-    # 52 weeks = 364 days. Let's take up to the last 364 or 371 days (integer multiple of 7)
-    recent_365 = all_dates_sorted[-365:] if len(all_dates_sorted) >= 365 else all_dates_sorted
-    total_past_year = sum(d["count"] for d in recent_365)
-    active_days = sum(1 for d in recent_365 if d["count"] > 0)
+    # Filter out any future dates from the API so data strictly spans trailing 12 months up to today
+    today_str = datetime.now(timezone.utc).strftime("%Y-%m-%d")
+    past_dates = [d for d in all_dates_sorted if d.get("date", "") <= today_str]
 
-    current_streak, longest_streak = calculate_streaks(all_dates_sorted)
+    if not past_dates:
+        past_dates = all_dates_sorted
 
-    # Prepare 52 weeks aligned to Sunday-Saturday or Monday-Sunday
-    # Standard GitHub contribution graph displays 52-53 columns, 7 rows (Sunday to Saturday)
-    # Let's take the trailing 52 weeks: 52 * 7 = 364 days
-    trailing_days = all_dates_sorted[-364:] if len(all_dates_sorted) >= 364 else all_dates_sorted
+    # Take trailing 52 weeks (364 days) ending on today
+    trailing_days = past_dates[-364:] if len(past_dates) >= 364 else past_dates
+
+    # Calculate metrics for the rolling 12 months (past year October to current date)
+    total_past_year = sum(d["count"] for d in trailing_days)
+    active_days = sum(1 for d in trailing_days if d["count"] > 0)
+
+    current_streak, longest_streak = calculate_streaks(past_dates)
 
     payload = {
         "generated_at": datetime.now(timezone.utc).isoformat(),
@@ -150,6 +153,8 @@ def main():
         "active_days_past_year": active_days,
         "current_streak": current_streak,
         "longest_streak": longest_streak,
+        "start_date": trailing_days[0]["date"] if trailing_days else "",
+        "end_date": trailing_days[-1]["date"] if trailing_days else "",
         "days": trailing_days
     }
 

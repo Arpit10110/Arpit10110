@@ -201,17 +201,15 @@ def build_ascii_svg(lines, username="Arpit10110"):
       white-space: pre;
     }}
     .row {{
-      opacity: 0;
+      opacity: 1;
       animation: revealRow 0.4s ease-out forwards;
     }}
     @keyframes revealRow {{
       0% {{
-        opacity: 0;
-        transform: translateY(3px);
+        opacity: 0.1;
       }}
       100% {{
         opacity: 1;
-        transform: translateY(0);
       }}
     }}
   </style>
