@@ -81,8 +81,8 @@
     <g transform="translate(240, 62)">
       <rect x="0" y="0" width="196" height="110" rx="8" fill="#161B22" stroke="#30363D" stroke-width="1" />
       <text x="16" y="26" class="metric-title">⚡  CONTRIBUTIONS</text>
-      <text x="16" y="65" class="metric-value" fill="#39D353">1,697</text>
-      <text x="16" y="90" class="metric-sub">2,742 Lifetime Total</text>
+      <text x="16" y="65" class="metric-value" fill="#39D353">1,699</text>
+      <text x="16" y="90" class="metric-sub">2,745 Lifetime Total</text>
     </g>
 
     <!-- Metric 3: BEST STREAK -->
@@ -90,14 +90,14 @@
       <rect x="0" y="0" width="196" height="110" rx="8" fill="#161B22" stroke="#30363D" stroke-width="1" />
       <text x="16" y="26" class="metric-title">🔥  BEST STREAK</text>
       <text x="16" y="65" class="metric-value" fill="#D29922">29 Days</text>
-      <text x="16" y="90" class="metric-sub">3d Active Streak</text>
+      <text x="16" y="90" class="metric-sub">4d Active Streak</text>
     </g>
 
     <!-- Metric 4: TOP LANGUAGE -->
     <g transform="translate(660, 62)">
       <rect x="0" y="0" width="196" height="110" rx="8" fill="#161B22" stroke="#30363D" stroke-width="1" />
       <text x="16" y="26" class="metric-title">🏆  TOP LANGUAGE</text>
-      <text x="16" y="65" class="metric-value" fill="#A371F7">JavaScript</text>
-      <text x="16" y="90" class="metric-sub">39.1% Code Weight</text>
+      <text x="16" y="65" class="metric-value" fill="#A371F7">Python</text>
+      <text x="16" y="90" class="metric-sub">30.2% Code Weight</text>
     </g>
 </svg>

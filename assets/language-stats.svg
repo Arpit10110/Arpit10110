@@ -65,27 +65,27 @@
 
   <!-- Terminal Title & Meta Info -->
   <text x="80" y="22" class="title-text">arpit@github:~$ language --stats</text>
-  <text x="860" y="22" class="meta-text" text-anchor="end">Analyzed 120 owned repositories · 132.7 MB code bytes</text>
+  <text x="860" y="22" class="meta-text" text-anchor="end">Analyzed 120 owned repositories · 6.0 MB code bytes</text>
 
   <!-- Language Progress Rows -->
   
-    <!-- Row 0: JavaScript -->
+    <!-- Row 0: Python -->
     <g transform="translate(30, 80)">
       <!-- Language Dot & Name -->
-      <circle cx="6" cy="12" r="5" fill="#F7DF1E" />
-      <text x="22" y="16" class="lang-name">JavaScript</text>
+      <circle cx="6" cy="12" r="5" fill="#3572A5" />
+      <text x="22" y="16" class="lang-name">Python</text>
 
       <!-- Track Background -->
       <rect x="150" y="5" width="380" height="14" rx="4" fill="#21262D" />
 
       <!-- Progress Fill with smooth animation -->
-      <rect x="150" y="5" width="148" height="14" rx="4" fill="#F7DF1E" opacity="0.9">
-        <animate attributeName="width" from="0" to="148" dur="0.8s" begin="0.1s" fill="freeze" calcMode="spline" keySplines="0.25 0.1 0.25 1" />
+      <rect x="150" y="5" width="114" height="14" rx="4" fill="#3572A5" opacity="0.9">
+        <animate attributeName="width" from="0" to="114" dur="0.8s" begin="0.1s" fill="freeze" calcMode="spline" keySplines="0.25 0.1 0.25 1" />
       </rect>
 
       <!-- Percentage & Bytes -->
-      <text x="555" y="16" class="pct-text">39.1%</text>
-      <text x="630" y="16" class="bytes-text">51.9 MB</text>
+      <text x="555" y="16" class="pct-text">30.2%</text>
+      <text x="630" y="16" class="bytes-text">1.8 MB</text>
     </g>
 
     <!-- Row 1: TypeScript -->
@@ -98,17 +98,36 @@
       <rect x="150" y="5" width="380" height="14" rx="4" fill="#21262D" />
 
       <!-- Progress Fill with smooth animation -->
-      <rect x="150" y="5" width="132" height="14" rx="4" fill="#3178C6" opacity="0.9">
-        <animate attributeName="width" from="0" to="132" dur="0.8s" begin="0.2s" fill="freeze" calcMode="spline" keySplines="0.25 0.1 0.25 1" />
+      <rect x="150" y="5" width="113" height="14" rx="4" fill="#3178C6" opacity="0.9">
+        <animate attributeName="width" from="0" to="113" dur="0.8s" begin="0.2s" fill="freeze" calcMode="spline" keySplines="0.25 0.1 0.25 1" />
       </rect>
 
       <!-- Percentage & Bytes -->
-      <text x="555" y="16" class="pct-text">34.9%</text>
-      <text x="630" y="16" class="bytes-text">46.3 MB</text>
+      <text x="555" y="16" class="pct-text">29.9%</text>
+      <text x="630" y="16" class="bytes-text">1.8 MB</text>
     </g>
 
-    <!-- Row 2: CSS -->
+    <!-- Row 2: JavaScript -->
     <g transform="translate(30, 152)">
+      <!-- Language Dot & Name -->
+      <circle cx="6" cy="12" r="5" fill="#F7DF1E" />
+      <text x="22" y="16" class="lang-name">JavaScript</text>
+
+      <!-- Track Background -->
+      <rect x="150" y="5" width="380" height="14" rx="4" fill="#21262D" />
+
+      <!-- Progress Fill with smooth animation -->
+      <rect x="150" y="5" width="111" height="14" rx="4" fill="#F7DF1E" opacity="0.9">
+        <animate attributeName="width" from="0" to="111" dur="0.8s" begin="0.3s" fill="freeze" calcMode="spline" keySplines="0.25 0.1 0.25 1" />
+      </rect>
+
+      <!-- Percentage & Bytes -->
+      <text x="555" y="16" class="pct-text">29.4%</text>
+      <text x="630" y="16" class="bytes-text">1.8 MB</text>
+    </g>
+
+    <!-- Row 3: CSS -->
+    <g transform="translate(30, 188)">
       <!-- Language Dot & Name -->
       <circle cx="6" cy="12" r="5" fill="#563D7C" />
       <text x="22" y="16" class="lang-name">CSS</text>
@@ -117,32 +136,13 @@
       <rect x="150" y="5" width="380" height="14" rx="4" fill="#21262D" />
 
       <!-- Progress Fill with smooth animation -->
-      <rect x="150" y="5" width="97" height="14" rx="4" fill="#563D7C" opacity="0.9">
-        <animate attributeName="width" from="0" to="97" dur="0.8s" begin="0.3s" fill="freeze" calcMode="spline" keySplines="0.25 0.1 0.25 1" />
+      <rect x="150" y="5" width="31" height="14" rx="4" fill="#563D7C" opacity="0.9">
+        <animate attributeName="width" from="0" to="31" dur="0.8s" begin="0.4s" fill="freeze" calcMode="spline" keySplines="0.25 0.1 0.25 1" />
       </rect>
 
       <!-- Percentage & Bytes -->
-      <text x="555" y="16" class="pct-text">25.6%</text>
-      <text x="630" y="16" class="bytes-text">33.9 MB</text>
-    </g>
-
-    <!-- Row 3: Python -->
-    <g transform="translate(30, 188)">
-      <!-- Language Dot & Name -->
-      <circle cx="6" cy="12" r="5" fill="#3572A5" />
-      <text x="22" y="16" class="lang-name">Python</text>
-
-      <!-- Track Background -->
-      <rect x="150" y="5" width="380" height="14" rx="4" fill="#21262D" />
-
-      <!-- Progress Fill with smooth animation -->
-      <rect x="150" y="5" width="6" height="14" rx="4" fill="#3572A5" opacity="0.9">
-        <animate attributeName="width" from="0" to="6" dur="0.8s" begin="0.4s" fill="freeze" calcMode="spline" keySplines="0.25 0.1 0.25 1" />
-      </rect>
-
-      <!-- Percentage & Bytes -->
-      <text x="555" y="16" class="pct-text">0.4%</text>
-      <text x="630" y="16" class="bytes-text">582.0 KB</text>
+      <text x="555" y="16" class="pct-text">8.2%</text>
+      <text x="630" y="16" class="bytes-text">508.2 KB</text>
     </g>
 
     <!-- Row 4: HTML -->
@@ -155,13 +155,13 @@
       <rect x="150" y="5" width="380" height="14" rx="4" fill="#21262D" />
 
       <!-- Progress Fill with smooth animation -->
-      <rect x="150" y="5" width="6" height="14" rx="4" fill="#E34C26" opacity="0.9">
-        <animate attributeName="width" from="0" to="6" dur="0.8s" begin="0.5s" fill="freeze" calcMode="spline" keySplines="0.25 0.1 0.25 1" />
+      <rect x="150" y="5" width="7" height="14" rx="4" fill="#E34C26" opacity="0.9">
+        <animate attributeName="width" from="0" to="7" dur="0.8s" begin="0.5s" fill="freeze" calcMode="spline" keySplines="0.25 0.1 0.25 1" />
       </rect>
 
       <!-- Percentage & Bytes -->
-      <text x="555" y="16" class="pct-text">0.0%</text>
-      <text x="630" y="16" class="bytes-text">8.0 KB</text>
+      <text x="555" y="16" class="pct-text">2.1%</text>
+      <text x="630" y="16" class="bytes-text">126.8 KB</text>
     </g>
 
     <!-- Row 5: C++ -->
@@ -179,7 +179,7 @@
       </rect>
 
       <!-- Percentage & Bytes -->
-      <text x="555" y="16" class="pct-text">0.0%</text>
-      <text x="630" y="16" class="bytes-text">5.0 KB</text>
+      <text x="555" y="16" class="pct-text">0.2%</text>
+      <text x="630" y="16" class="bytes-text">11.8 KB</text>
     </g>
 </svg>
