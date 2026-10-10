@@ -81,7 +81,7 @@
     <g transform="translate(240, 62)">
       <rect x="0" y="0" width="196" height="110" rx="8" fill="#161B22" stroke="#30363D" stroke-width="1" />
       <text x="16" y="26" class="metric-title">⚡  CONTRIBUTIONS</text>
-      <text x="16" y="65" class="metric-value" fill="#39D353">1,699</text>
+      <text x="16" y="65" class="metric-value" fill="#39D353">1,696</text>
       <text x="16" y="90" class="metric-sub">2,745 Lifetime Total</text>
     </g>
 
