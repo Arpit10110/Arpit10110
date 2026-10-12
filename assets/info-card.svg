@@ -127,7 +127,7 @@
 
     <!-- Row 8: Metrics -->
     <text x="0" y="154" class="label">PROJECTS</text>
-    <text x="85" y="154" class="value">60+ Projects · 124 Repos · 1000+ GFG DSA</text>
+    <text x="85" y="154" class="value">60+ Projects · 125 Repos · 1000+ GFG DSA</text>
 
     <!-- Row 9: Status -->
     <text x="0" y="176" class="label">STATUS</text>
