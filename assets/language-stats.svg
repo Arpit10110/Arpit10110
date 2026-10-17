@@ -65,7 +65,7 @@
 
   <!-- Terminal Title & Meta Info -->
   <text x="80" y="22" class="title-text">arpit@github:~$ language --stats</text>
-  <text x="860" y="22" class="meta-text" text-anchor="end">Analyzed 121 owned repositories · 6.2 MB code bytes</text>
+  <text x="860" y="22" class="meta-text" text-anchor="end">Analyzed 122 owned repositories · 6.2 MB code bytes</text>
 
   <!-- Language Progress Rows -->
   
@@ -84,7 +84,7 @@
       </rect>
 
       <!-- Percentage & Bytes -->
-      <text x="555" y="16" class="pct-text">31.5%</text>
+      <text x="555" y="16" class="pct-text">31.4%</text>
       <text x="630" y="16" class="bytes-text">1.9 MB</text>
     </g>
 
@@ -142,7 +142,7 @@
 
       <!-- Percentage & Bytes -->
       <text x="555" y="16" class="pct-text">8.1%</text>
-      <text x="630" y="16" class="bytes-text">509.7 KB</text>
+      <text x="630" y="16" class="bytes-text">514.6 KB</text>
     </g>
 
     <!-- Row 4: HTML -->
@@ -161,7 +161,7 @@
 
       <!-- Percentage & Bytes -->
       <text x="555" y="16" class="pct-text">2.0%</text>
-      <text x="630" y="16" class="bytes-text">127.7 KB</text>
+      <text x="630" y="16" class="bytes-text">128.1 KB</text>
     </g>
 
     <!-- Row 5: C++ -->
