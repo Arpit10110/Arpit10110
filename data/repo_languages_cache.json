@@ -395,7 +395,7 @@
     }
   },
   "Arpit10110": {
-    "pushed_at": "2026-10-20T11:31:02Z",
+    "pushed_at": "2026-10-21T11:43:25Z",
     "languages": {
       "Python": 58789
     }
@@ -913,6 +913,14 @@
       "JavaScript": 4604,
       "Java": 1298,
       "HTML": 370
+    }
+  },
+  "kota": {
+    "pushed_at": "2026-10-21T14:47:14Z",
+    "languages": {
+      "TypeScript": 160124,
+      "CSS": 5047,
+      "JavaScript": 465
     }
   }
 }
