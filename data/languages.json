@@ -1,21 +1,21 @@
 {
-  "generated_at": "2026-11-19T15:40:30.222817+00:00",
-  "total_bytes": 6656243,
+  "generated_at": "2026-11-20T15:22:34.449787+00:00",
+  "total_bytes": 6660582,
   "repos_analyzed": 123,
   "languages": [
     {
       "name": "TypeScript",
-      "bytes": 2197365,
-      "percentage": 33.0
+      "bytes": 2201614,
+      "percentage": 33.1
     },
     {
       "name": "Python",
       "bytes": 1914159,
-      "percentage": 28.8
+      "percentage": 28.7
     },
     {
       "name": "JavaScript",
-      "bytes": 1864621,
+      "bytes": 1864711,
       "percentage": 28.0
     },
     {
