@@ -1,19 +1,14 @@
 {
-  "generated_at": "2026-11-25T17:08:02.935441+00:00",
+  "generated_at": "2026-11-26T16:49:17.519564+00:00",
   "username": "Arpit10110",
-  "total_lifetime": 3024,
-  "total_past_year": 1842,
+  "total_lifetime": 3032,
+  "total_past_year": 1835,
   "active_days_past_year": 243,
-  "current_streak": 21,
+  "current_streak": 22,
   "longest_streak": 29,
-  "start_date": "2025-11-27",
-  "end_date": "2026-11-25",
+  "start_date": "2025-11-28",
+  "end_date": "2026-11-26",
   "days": [
-    {
-      "date": "2025-11-27",
-      "count": 15,
-      "level": 4
-    },
     {
       "date": "2025-11-28",
       "count": 10,
@@ -1826,6 +1821,11 @@
     },
     {
       "date": "2026-11-25",
+      "count": 8,
+      "level": 2
+    },
+    {
+      "date": "2026-11-26",
       "count": 6,
       "level": 1
     }
